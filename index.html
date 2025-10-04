@@ -24,9 +24,10 @@
                 </h2>
                 <div class="file-upload box-shadow">
                     <div>
-                        <input type="file" class="form-control" id="resume">
+                        <input type="file" accept="application/pdf,.pdf class=" form-control" id="resume">
                     </div>
                 </div>
+                <p class="pdftext"></p>
             </div>
             <div class="col-md-6 col-sm-12 border">
                 <h2 class="sub-heading center py-5">
@@ -34,6 +35,7 @@
                 </h2>
                 <textarea name="desc" class="p-2 border job-desc" placeholder="Copy & Paste job description here."
                     id="desc"></textarea>
+                <button class="btn btn-dark my-2" id="checkbtn">Check Now</button>
             </div>
         </div>
     </section>
@@ -42,59 +44,39 @@
 
     <section class="container-fluid">
         <h2 class="sub-heading center p-3 box-bg my-2 br-7 box-shadow">
-            Match Score : 90%
+            Match Score : <span class="match_score"></span>
         </h2>
-        <table class="border w-90 m-auto">
-            <thead>
-                <tr>
-                    <th class="text-center">Keywords Found In Job</th>
-                    <th class="text-center">Missing Keywords In Job</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>react</td>
-                </tr>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <table class="border w-90 m-auto">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Matching Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody class="match-board">
+                        <tr>
+                            <td>Nothing to show yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <table class="border w-90 m-auto">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Missing Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody class="missing-board">
+                        <tr>
+                            <td>Nothing to show yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-            </tbody>
-        </table>
     </section>
 
     <section class="container mt-4 mb-3">
@@ -142,12 +124,20 @@
     </section>
 
     <footer>
-         <p class="mb-0 text-center">Made with ♥ by Abdullah Hussain.</p>
+        <p class="mb-0 text-center">Made with ♥ by Abdullah Hussain.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7Mq``````````````````````````````sXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"
+        integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
+    </script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

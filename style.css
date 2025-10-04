@@ -104,8 +104,14 @@ br {
     cursor: pointer;
 }
 
-footer p{
+footer p {
     color: var(--light);
-    background-color: var(--light-dark) ;
+    background-color: var(--light-dark);
     padding: 10px;
+}
+
+.pdftext {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

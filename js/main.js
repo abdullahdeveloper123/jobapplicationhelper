@@ -151,6 +151,7 @@ let cover_letter = document.querySelector('.cover_letter')
 
 gen_btn.addEventListener('click', () => {
   cover_letter.style.display = 'block'
+  
   const prompt = `Write only the cover letter body (no headings, titles, instructions, or extra characters). Tone: confident, humble, growth-oriented. Applicant: early-career developer with hands-on experience. Emphasize adaptability, strong fundamentals, and eagerness to learn Laravel, Inertia, and Tailwind in a professional setting.
 
 Job Description:
@@ -161,7 +162,16 @@ ${resume_text}
 
 
 `
-
+ cover_letter.innerHTML= `
+<div class="honeycomb">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>`
   ai_api(prompt)
 })
 

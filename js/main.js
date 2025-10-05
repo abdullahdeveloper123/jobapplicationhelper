@@ -150,7 +150,7 @@ let gen_btn = document.querySelector('#gen_letter')
 let cover_letter = document.querySelector('.cover_letter')
 
 gen_btn.addEventListener('click', () => {
-  cover_letter.style.display = ''
+  cover_letter.style.display = 'block'
   
   const prompt = `Write only the cover letter body (no headings, titles, instructions, or extra characters). Tone: confident, humble, growth-oriented. Applicant: early-career developer with hands-on experience. Emphasize adaptability, strong fundamentals, and eagerness to learn Laravel, Inertia, and Tailwind in a professional setting.
 
@@ -163,7 +163,7 @@ ${resume_text}
 
 `
  cover_letter.innerHTML= `
-<div class="mx-auto mt-3 mb-1">
+<div class="mx-auto mt-1 mb-3">
 <div class="honeycomb">
   <div></div>
   <div></div>
@@ -173,7 +173,6 @@ ${resume_text}
   <div></div>
   <div></div>
 </div>
-<p>Generating Letter</p>
 </div>`
   ai_api(prompt)
 })

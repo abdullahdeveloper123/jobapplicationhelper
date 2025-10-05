@@ -1,0 +1,288 @@
+/* Core styling */
+:root {
+    --dark: rgb(33, 33, 33);
+    --light-dark: rgb(63, 63, 63);
+    --light: rgb(221, 221, 221);
+    --grey: rgb(176, 176, 176);
+    --dark-grey: rgb(108, 107, 107);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../font/Roboto-Medium.ttf");  
+}
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Roboto;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.sub-heading {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 20px;
+    color: var(--light-dark);
+}
+
+p {
+    font-size: 15px;
+    color: var(--dark-grey);
+}
+
+.box-bg {
+    background-color: var(--dark);
+    padding: 15px 0;
+    color: var(--light);
+}
+
+.br-7 {
+    border-radius: 7px
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 11px 2px #e2e2e259;
+
+}
+
+.center {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.border-none {
+    border: none;
+}
+
+.section-container {
+    width: 100%;
+    margin: 0 auto;
+    color: var(--dark-grey);
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.211);
+    margin: auto;
+}
+
+br {
+    padding: 0 20px;
+}
+
+/* Main styling start here */
+
+.file-upload {
+    border-radius: 7px;
+    display: flex;
+    padding: 59px 26px;
+    width: fit-content;
+}
+
+.job-desc {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.copy-icon {
+    width: fit-content;
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+footer p {
+    color: var(--light);
+    background-color: var(--light-dark);
+    padding: 10px;
+}
+
+.pdftext {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+/* Add to your existing style sheet */
+.cover_letter {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  white-space: pre-wrap; /* Ensures paragraphs wrap correctly */
+  display: flex;
+}
+
+/* Style headings */
+.cover_letter h1,
+.cover_letter h2,
+.cover_letter h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
+}
+
+/* Style lists */
+.cover_letter ul,
+.cover_letter ol {
+  padding-left: 20px;
+}
+
+/* Style code blocks */
+.cover_letter pre {
+  background-color: #f6f8fa;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Style inline code */
+.cover_letter code {
+  font-family: monospace;
+  background-color: #e6e6e6;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Optional: Add spacing for paragraphs */
+.cover_letter p {
+  margin-bottom: 1em;
+}
+
+/* From Uiverse.io by boryanakrasteva */ 
+@-webkit-keyframes honeycomb {
+  0%,
+  20%,
+  80%,
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  30%,
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes honeycomb {
+  0%,
+  20%,
+  80%,
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  30%,
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.honeycomb {
+  height: 24px;
+  position: relative;
+  width: 24px;
+  margin: auto;
+}
+
+.honeycomb div {
+  -webkit-animation: honeycomb 2.1s infinite backwards;
+  animation: honeycomb 2.1s infinite backwards;
+  background: #242424;
+  height: 12px;
+  margin-top: 6px;
+  position: absolute;
+  width: 24px;
+}
+
+.honeycomb div:after, .honeycomb div:before {
+  content: '';
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.honeycomb div:after {
+  top: -6px;
+  border-bottom: 6px solid #242424;
+}
+
+.honeycomb div:before {
+  bottom: -6px;
+  border-top: 6px solid #242424;
+}
+
+.honeycomb div:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  left: -28px;
+  top: 0;
+}
+
+.honeycomb div:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  left: -14px;
+  top: 22px;
+}
+
+.honeycomb div:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  left: 14px;
+  top: 22px;
+}
+
+.honeycomb div:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  left: 28px;
+  top: 0;
+}
+
+.honeycomb div:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  left: 14px;
+  top: -22px;
+}
+
+.honeycomb div:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  left: -14px;
+  top: -22px;
+}
+
+.honeycomb div:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  left: 0;
+  top: 0;
+}

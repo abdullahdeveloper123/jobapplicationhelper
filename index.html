@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Job Application Helper</title>
 </head>
 
 <body>
@@ -43,8 +44,8 @@
     <br class="border">
 
     <section class="container-fluid">
-        <h2 class="sub-heading center p-3 box-bg my-2 br-7 box-shadow">
-            Match Score : <span class="match_score"></span>
+        <h2 class="match_score sub-heading center p-3 box-bg my-2 br-7 box-shadow">
+            Matching Score: 0%
         </h2>
         <div class="row">
             <div class="col-md-6 col-sm-6">
@@ -81,45 +82,16 @@
 
     <section class="container mt-4 mb-3">
         <h2 class="sub-heading center p-3 box-bg my-2 br-7 box-shadow">
-            Generate Ai Cover Letter
+            Ai Cover Letter
         </h2>
         <div class="coverletter border p-3 br-7">
             <div class="row">
                 <i class="fa-regular fa-copy copy-icon"></i>
 
             </div>
-            <p>The Interstellar Public Library <br>
-                42 Galaxy Avenue <br>
-                Nova City, USA <br>
-                <br>
-                Dear Hiring Manager, <br>
-                <br>
-
-                I am writing to express my enthusiasm for the Librarian position at The Interstellar Public Library.
-                While most libraries specialize in categorizing books, I am equally comfortable organizing manuscripts,
-                rare cosmic maps, or the occasional time-traveling scroll. With a passion for knowledge and a proven
-                ability to bring order to chaos, I believe I am uniquely suited to contribute to your library’s mission
-                of serving readers across galaxies.
-                <br>
-                In my previous role at the Springfield City Library, I managed a collection of over 100,000 items,
-                digitized rare archives, and implemented an AI-based recommendation system that tripled patron
-                engagement. Beyond technical expertise, I thrive in connecting with people—whether it’s guiding a
-                curious child to their first fantasy novel or helping a scholar locate resources on 14th-century star
-                charts. I combine precision with imagination, ensuring that information is not only accessible but also
-                inspiring.
-                <br>
-                What excites me most about this role is the chance to be part of a forward-looking institution that
-                embraces both tradition and innovation. The idea of cataloging interplanetary literature while fostering
-                community learning feels like a dream job. I am eager to bring my skills in digital archiving,
-                multilingual indexing, and, of course, good old-fashioned book love to your remarkable library.
-                <br>
-                Thank you for considering my application. I would welcome the opportunity to discuss how my experience
-                and enthusiasm align with the vision of The Interstellar Public Library. I am confident that I can
-                contribute meaningfully while continuing to learn and grow within your stellar team.
-                <br>
-                Sincerely, <br>
-                Jane Doe
-            </p>
+            <div class="cover_letter">
+                    <button id="gen_letter" class="btn btn-dark m-auto">Generate Now</button>
+            </div>
         </div>
     </section>
 
@@ -137,7 +109,7 @@
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
     </script>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,10 @@
     font-family: Roboto;
     src: url("../font/Roboto-Medium.ttf");  
 }
+@font-face {
+  font-family: joy;
+  src: url('../font/ZalandoSansExpanded-Medium.ttf');
+}
 
 * {
     margin: 0 0;
@@ -25,6 +29,10 @@
 .heading {
     font-size: 50px;
     font-weight: 600;
+}
+
+.joy{
+  font-family: joy;
 }
 
 .sub-heading {

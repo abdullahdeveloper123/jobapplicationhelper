@@ -57,7 +57,7 @@ Backend API: Hosted on **PythonAnywhere** for seamless AI responses.
 
 **Abdullah Hussain**
 Full Stack Developer | Flask • Django • Node • React
-📎 [LinkedIn](https://www.linkedin.com/in/abdullah-hussain-b76801387/)
+📎 [LinkedIn](https://www.linkedin.com/in/abdullah-hussain-70892338a)
 
 ---
 
